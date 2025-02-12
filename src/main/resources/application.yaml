@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ArcView WoT Bridge
+
+graphql:
+  packages:
+    - "de.hsudbrock.arcview_wot_bridge"
+  playground:
+    enabled: true
+
+server:
+  port: 8300
+
+wot:
+  servient:
+    http:
+      server:
+        enabled: false
