@@ -16,3 +16,6 @@ wot:
     http:
       server:
         enabled: false
+    websocket:
+      server:
+        enabled: false

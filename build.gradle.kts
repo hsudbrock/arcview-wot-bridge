@@ -24,6 +24,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("ai.ancf.lmos:kotlin-wot-spring-boot-starter:1.0-SNAPSHOT")
 	implementation("ai.ancf.lmos:kotlin-wot-binding-http:1.0-SNAPSHOT")
+	implementation("ai.ancf.lmos:kotlin-wot-binding-websocket:1.0-SNAPSHOT")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")

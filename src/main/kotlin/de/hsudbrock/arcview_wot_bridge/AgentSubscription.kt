@@ -12,12 +12,13 @@ class AgentSubscription(private val wot: Wot): Subscription {
 
     @GraphQLDescription("Executes an Agent and returns the results. If no agent is specified, the first agent is used.")
     suspend fun agent(agentName: String? = null, request: AgentRequest) : Flux<AgentResult> {
-
-        val tenantId = request.systemContext.first { it.key == "tenantId" }.value
-        val channelId = request.systemContext.first { it.key == "channelId" }.value
+        val tenantId = request.systemContext.filter { it.key == "tenantId" }.first().value
+        // val tenantId = request.systemContext.first { it.key == "tenantId" }.value
+        // val channelId = request.systemContext.first { it.key == "channelId" }.value
+        val channelId = request.systemContext.filter { it.key == "channelId" }.first().value
         val conversationId = request.conversationContext.conversationId
 
-        val runtimeAgentDesc = wot.requestThingDescription("http://localhost:8080/runtime-agent")
+        val runtimeAgentDesc = wot.requestThingDescription("http://localhost:8182/runtime-agent")
         val runtimeAgent = wot.consume(runtimeAgentDesc) as ConsumedThing
 
         val result = runtimeAgent.invokeAction<ChatInput, AssistantMessage>(
