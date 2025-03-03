@@ -1,4 +1,4 @@
-package de.hsudbrock.arcview_wot_bridge
+package ai.ancf.lmos.arc.bridge
 
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.reactive.config.CorsRegistry

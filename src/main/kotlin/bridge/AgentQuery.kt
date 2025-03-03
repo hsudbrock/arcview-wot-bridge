@@ -1,4 +1,4 @@
-package de.hsudbrock.arcview_wot_bridge
+package ai.ancf.lmos.arc.bridge
 
 import com.expediagroup.graphql.generator.annotations.GraphQLDescription
 import com.expediagroup.graphql.server.operations.Query
@@ -9,7 +9,7 @@ class ChatQuery: Query {
 
     @GraphQLDescription("agents query")
     fun agent(): Agents {
-        return Agents(listOf("arcview-wot-bridge"))
+        return Agents(listOf("scraper"))
     }
 
 }

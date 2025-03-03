@@ -4,7 +4,9 @@ spring:
 
 graphql:
   packages:
-    - "de.hsudbrock.arcview_wot_bridge"
+    - "ai.ancf.lmos.arc.bridge"
+    - "ai.ancf.lmos.sdk.model"
+    - "ai.ancf.lmos.sdk.agents"
   playground:
     enabled: true
 

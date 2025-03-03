@@ -1,4 +1,4 @@
-package de.hsudbrock.arcview_wot_bridge
+package ai.ancf.lmos.arc.bridge
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
