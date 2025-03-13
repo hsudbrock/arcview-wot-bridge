@@ -1,4 +1,4 @@
-package ai.ancf.lmos.arc.bridge
+package org.eclipse.lmos.arc.bridge
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

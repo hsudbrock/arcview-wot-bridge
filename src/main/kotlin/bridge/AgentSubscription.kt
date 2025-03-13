@@ -1,4 +1,4 @@
-package ai.ancf.lmos.arc.bridge
+package org.eclipse.lmos.arc.bridge
 
 
 import com.expediagroup.graphql.generator.annotations.GraphQLDescription

@@ -4,9 +4,9 @@ spring:
 
 graphql:
   packages:
-    - "ai.ancf.lmos.arc.bridge"
-    - "ai.ancf.lmos.sdk.model"
-    - "ai.ancf.lmos.sdk.agents"
+    - "org.eclipse.lmos.arc.bridge"
+    - "org.eclipse.lmos.sdk.model"
+    - "org.eclipse.lmos.sdk.agents"
   playground:
     enabled: true
 
